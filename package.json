@@ -1,0 +1,21 @@
+{
+  "name": "beat81",
+  "version": "1.0.0",
+  "description": "Nodejs interview task for BEAT81",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "jest --verbose"
+  },
+  "keywords": [],
+  "author": "Raj Chaudhary",
+  "dependencies": {
+    "dotenv": "8.2.0",
+    "express": "4.17.1",
+    "joi": "14.3.1",
+    "socket.io": "2.3.0"
+  },
+  "devDependencies": {
+    "jest": "24.9.0"
+  }
+}

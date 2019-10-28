@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "owner_id": 0,
+    "in_use": false,
+    "is_allocatable": true
+  },
+  {
+    "id": 2,
+    "owner_id": 0,
+    "in_use": false,
+    "is_allocatable": true
+  },
+  {
+    "id": 3,
+    "owner_id": 0,
+    "in_use": false,
+    "is_allocatable": true
+  },
+  {
+    "id": 4,
+    "owner_id": 5,
+    "in_use": false,
+    "is_allocatable": true
+  },
+  {
+    "id": 5,
+    "owner_id": 7,
+    "in_use": false,
+    "is_allocatable": true
+  },
+  {
+    "id": 6,
+    "owner_id": 0,
+    "in_use": false,
+    "is_allocatable": true
+  },
+  {
+    "id": 7,
+    "owner_id": 0,
+    "in_use": false,
+    "is_allocatable": true
+  }
+]
