@@ -74,6 +74,7 @@ Response :
 ```
 
 - POST /workouts/:id/allocations (Create allocations for a particular workout)
+
 ```
 Request :
 {
@@ -240,6 +241,12 @@ UI for admin and user
 
 Admin/User can mark a sensor broken (system may decide if a sensor is broken or not)
 and on marking sensor broken, user should get update in real time that his sensor is broken and then he should see a button to get another sensor.
+
+## How to use :
+
+- npm install ( to install the dependencies )
+- npm start ( to start the server)
+- npm run test ( to run the tests)
 
 ## To Do :
 
