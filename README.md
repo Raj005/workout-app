@@ -27,11 +27,190 @@ Behind the scenes they will be allocated a sensor automatically. In case if they
 
 ## APIs :
 
-- GET /workouts/:id
-
 - GET /workouts/:id/allocations
 
+```
+{
+    "allocations": [
+        {
+            "user_id": 1,
+            "sensor_id": 1,
+            "sensor_is_user_property": false,
+            "created_at": "2019-10-28T01:42:41.000Z",
+            "updated_at": "2019-10-28T01:42:41.000Z"
+        },
+        {
+            "user_id": 2,
+            "sensor_id": 2,
+            "sensor_is_user_property": false,
+            "created_at": "2019-10-28T01:42:45.413Z",
+            "updated_at": "2019-10-28T01:42:45.413Z"
+        },
+        {
+            "user_id": 3,
+            "sensor_id": 3,
+            "sensor_is_user_property": false,
+            "created_at": "2019-10-28T01:42:49.389Z",
+            "updated_at": "2019-10-28T01:42:49.389Z"
+        },
+        {
+            "user_id": 5,
+            "sensor_id": 4,
+            "sensor_is_user_property": true,
+            "created_at": "2019-10-28T01:42:55.975Z",
+            "updated_at": "2019-10-28T01:42:55.975Z"
+        },
+        {
+            "user_id": 7,
+            "sensor_id": 5,
+            "sensor_is_user_property": true,
+            "created_at": "2019-10-28T01:42:55.975Z",
+            "updated_at": "2019-10-28T01:42:55.975Z"
+        }
+    ]
+}
+```
+
 - POST /workouts/:id/allocations
+
+```
+{
+    "workout_id": 1,
+    "allocations": [
+        {
+            "user_id": 1,
+            "sensor_id": 1,
+            "sensor_is_user_property": false,
+            "created_at": "2019-10-28T01:42:41.000Z",
+            "updated_at": "2019-10-28T01:42:41.000Z"
+        },
+        {
+            "user_id": 2,
+            "sensor_id": 2,
+            "sensor_is_user_property": false,
+            "created_at": "2019-10-28T01:42:45.413Z",
+            "updated_at": "2019-10-28T01:42:45.413Z"
+        },
+        {
+            "user_id": 5,
+            "sensor_id": 4,
+            "sensor_is_user_property": true,
+            "created_at": "2019-10-28T01:42:55.975Z",
+            "updated_at": "2019-10-28T01:42:55.975Z"
+        },
+        {
+            "user_id": 7,
+            "sensor_id": 5,
+            "sensor_is_user_property": true,
+            "created_at": "2019-10-28T01:42:55.975Z",
+            "updated_at": "2019-10-28T01:42:55.975Z"
+        },
+        {
+            "user_id": 3,
+            "sensor_id": 6,
+            "sensor_is_user_property": false,
+            "created_at": "2019-10-28T01:44:37.133Z",
+            "updated_at": "2019-10-28T01:44:37.133Z"
+        }
+    ],
+    "non_allocated_users": []
+}
+```
+
+- GET /sensors
+
+```
+{
+    "sensors": [
+        {
+            "id": 1,
+            "owner_id": 0,
+            "in_use": true,
+            "is_allocatable": true
+        },
+        {
+            "id": 2,
+            "owner_id": 0,
+            "in_use": true,
+            "is_allocatable": true
+        },
+        {
+            "id": 3,
+            "owner_id": 0,
+            "in_use": true,
+            "is_allocatable": true
+        },
+        {
+            "id": 4,
+            "owner_id": 5,
+            "in_use": true,
+            "is_allocatable": true
+        },
+        {
+            "id": 5,
+            "owner_id": 7,
+            "in_use": true,
+            "is_allocatable": true
+        },
+        {
+            "id": 6,
+            "owner_id": 0,
+            "in_use": false,
+            "is_allocatable": true
+        },
+        {
+            "id": 7,
+            "owner_id": 0,
+            "in_use": false,
+            "is_allocatable": true
+        }
+    ]
+}
+```
+
+- PUT /sensors/3/break
+
+```
+{
+    "sensor": {
+        "id": 3,
+        "owner_id": 0,
+        "in_use": true,
+        "is_allocatable": false
+    }
+}
+```
+
+- GET /users
+
+```
+{
+    "users": [
+        {
+            "id": 1
+        },
+        {
+            "id": 2
+        },
+        {
+            "id": 3
+        },
+        {
+            "id": 4
+        },
+        {
+            "id": 5
+        },
+        {
+            "id": 6
+        },
+        {
+            "id": 7
+        }
+    ]
+}
+
+```
 
 ## Frontend :
 
