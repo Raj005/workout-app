@@ -72,8 +72,15 @@ Behind the scenes they will be allocated a sensor automatically. In case if they
 ```
 
 - POST /workouts/:id/allocations (Create allocations for a particular workout)
+```
+Request :
+{
+	"participants":[1,2,3,5,7]
+}
+```
 
 ```
+Response :
 {
     "workout_id": 1,
     "allocations": [
