@@ -27,7 +27,7 @@ Behind the scenes they will be allocated a sensor automatically. In case if they
 
 ## APIs :
 
-- GET /workouts/:id/allocations
+- GET /workouts/:id/allocations (Get all the allocations for a particular workout)
 
 ```
 {
@@ -71,7 +71,7 @@ Behind the scenes they will be allocated a sensor automatically. In case if they
 }
 ```
 
-- POST /workouts/:id/allocations
+- POST /workouts/:id/allocations (Create allocations for a particular workout)
 
 ```
 {
@@ -117,7 +117,7 @@ Behind the scenes they will be allocated a sensor automatically. In case if they
 }
 ```
 
-- GET /sensors
+- GET /sensors (Get all the sensors of the system)
 
 ```
 {
@@ -168,7 +168,7 @@ Behind the scenes they will be allocated a sensor automatically. In case if they
 }
 ```
 
-- PUT /sensors/3/break
+- PUT /sensors/3/break (Mark any sensor broken using this api)
 
 ```
 {
@@ -181,7 +181,7 @@ Behind the scenes they will be allocated a sensor automatically. In case if they
 }
 ```
 
-- GET /users
+- GET /users (Get all the users of the system)
 
 ```
 {
