@@ -30,6 +30,8 @@ Behind the scenes they will be allocated a sensor automatically. In case if they
 - GET /workouts/:id/allocations (Get all the allocations for a particular workout)
 
 ```
+Response :
+
 {
     "allocations": [
         {
@@ -127,6 +129,8 @@ Response :
 - GET /sensors (Get all the sensors of the system)
 
 ```
+Response :
+
 {
     "sensors": [
         {
@@ -178,6 +182,8 @@ Response :
 - PUT /sensors/3/break (Mark any sensor broken using this api)
 
 ```
+Response :
+
 {
     "sensor": {
         "id": 3,
@@ -191,6 +197,8 @@ Response :
 - GET /users (Get all the users of the system)
 
 ```
+Response :
+
 {
     "users": [
         {
