@@ -1,8 +1,8 @@
-# Nodejs interview task for BEAT81
+# Nodejs microservice architecture with DI and SOLID principles
 
 ## Story :
 
-We define System here as BEAT81. System creates workouts, users and allocations.
+We define a System having workouts, users and allocations.
 
 System will have sensors (from outside or in house, which can be broken or working).
 Workout will have users called participants.
@@ -250,5 +250,6 @@ and on marking sensor broken, user should get update in real time that his senso
 
 ## To Do :
 
-- authorization of requests using jwt
+- Authentication
+- Role based authorization
 - Frontend
